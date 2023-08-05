@@ -9,7 +9,7 @@ Scripts used with Microsoft Configuration Manager as the basis for all install, 
 
 **Overview** These scripts are companion scripts to packages for Microsoft Endpoint Configuration Manager. They provide the logic needed to install, uninstall, detect applications published in Software Center. These scripts are modularized to handle certifcates.
 
-## Scripts prefixed with certificate-
+## Scripts prefixed with clickonce-
 
 **Overview** These scripts are companion scripts to packages for Microsoft Endpoint Configuration Manager. They provide the logic needed to install, uninstall, detect applications published in Software Center. These scripts are modularized to handle clickonce applications. Oftentimes, developers package their products with this technology and fail to code-sign them. I put tother some rudimentary UI automation to auto-click on popups in an effort to guide the user towards a successful installation while minimizing calls to the helpdesk for popups that, in all honesty, are cause for concern in today's security-minded world.
 
@@ -25,7 +25,7 @@ Scripts used with Microsoft Configuration Manager as the basis for all install, 
 
 **Overview** I don't know what it is about in-place upgrades of a bloomberg terminal installation, but it can take (literally) hours on even the best systems (Dell Precision Tower 34xx series). I found it easier to *scrape* the Bloomberg downloads page, download the version needed, and install over the existing version. This was a huge win with my trading users.
 
-## folderaccess-*.ps1 and registryaccess-*.ps1
+## Scripts Prefixed with folderaccess- and registryaccess-
 
 **Overview** I am not a fan of using pre-compiled executables that make promises of modifying low-level operating system security ACLs (i.e., SetACL.exe and others). The last thing I need is for someone within InfoSec to identify something *calling home* and leaking proprietary data and telemtry to some offshore organization. So, I figured out how to manage ACLs for folders and the registry using .NET Framework libraries within powershell.
 
